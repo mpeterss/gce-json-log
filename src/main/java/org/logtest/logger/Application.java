@@ -8,16 +8,16 @@ public class Application {
     private static final Logger LOG = LoggerFactory.getLogger(Application.class);
 
     public static void main(String[] args) {
-        LOG.debug("Single line debug");
-        LOG.debug("MultiLine debug \n second line \n third line");
+        LOG.debug("Single line DEBUG");
+        LOG.debug("MultiLine DEBUG \n second line \n third line");
 
-        LOG.info("Single line debug");
-        LOG.info("MultiLine debug \n second line \n third line");
+        LOG.info("Single line INFO");
+        LOG.info("MultiLine INFO \n second line \n third line");
 
-        LOG.error("Single line debug");
-        LOG.error("MultiLine debug \n second line \n third line");
+        LOG.error("Single line ERROR");
+        LOG.error("MultiLine ERROR \n second line \n third line");
 
-        LOG.warn("Single line warn");
-        LOG.warn("MultiLine warn \n second line \n third line");
+        LOG.warn("Single line WARNING");
+        LOG.warn("MultiLine WARNING \n second line \n third line");
     }
 }
