@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+    id "application"
+    id "com.github.johnrengelman.shadow" version "5.0.0"
+}
+
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 11
+
+repositories {
+    mavenCentral()
+}
+
+shadowJar {
+    mainClassName = 'org.logtest.logger.Application'
+    classifier = "uber"
+    version = null
+}
+
+dependencies {
+    implementation "ch.qos.logback:logback-core:1.2.3"
+    implementation "ch.qos.logback:logback-classic:1.2.3"
+    implementation "ch.qos.logback:logback-access:1.2.3"
+    implementation 'net.logstash.logback:logstash-logback-encoder:6.0'
+}
